@@ -1,0 +1,9 @@
+
+Login-AzureRmAccount | Out-String
+
+
+
+$subscriptionname = ( Get-AzureRmSubscription | Out-GridView -Title “Select an Azure Subscription …” -PassThru).SubscriptionName
+#$subscriptionname=(Get-AzureRmSubscription -PassThru).subscriptionname
+#Write - Output $subscriptionId
+Write - Output $subscriptionname
